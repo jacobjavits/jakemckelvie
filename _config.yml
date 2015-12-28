@@ -1,0 +1,13 @@
+# Site settings
+title: Jake McKelvie
+email: jacobcmckelvie@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Jake McKelvie is a web designer, developer and musician from Keene, NH. Custom sites using Wordpress, Jekyll and more!
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jakemckelvie.com" # the base hostname & protocol for your site
+twitter_username: jacobcmckelvie
+github_username:  jacobjavits
+linked_username:  https://www.linkedin.com/in/jacob-mckelvie-656a8542
+
+# Build settings
+markdown: kramdown

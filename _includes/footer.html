@@ -1,0 +1,53 @@
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col  footer-col-2">
+      <ul class="social-media-list">
+        <li class="list-email">
+          <h2>
+            <!-- <a href="mailto:{{ site.email }}"> -->
+              <span class="icon">
+                <svg class="icon icon-mail">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+              </span>
+              <span class="email">{{ site.email }}</span>
+            <!-- </a> -->
+          </h2>
+        </li>
+
+        <li>
+          <a href="/files/JakeMcKelvieResume.pdf" target="_blank">
+            <svg class="icon icon-profile">
+              <use xlink:href="#icon-profile"></use>
+            </svg>
+            <span>Resume</span>
+          </a>
+        </li>
+        {% if site.linked_username %}
+        <li>
+          <a href="{{ site.linked_username }}" target="_blank">
+            <svg class="icon icon-linkedin2">
+              <use xlink:href="#icon-linkedin2"></use>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </li>
+        {% endif %} {% if site.twitter_username %}
+        <li>
+          <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">
+            <svg class="icon icon-twitter">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+            <span>Twitter</span>
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+
+  </div>
+
+</footer>
+
+<script src="{{ " /js/main.js " | prepend: site.baseurl }}"></script>
