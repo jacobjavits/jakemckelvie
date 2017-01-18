@@ -45,6 +45,25 @@ body {
 }
 
 /**
+ * Clearfix
+ */
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/**
+ * Classes
+ */
+ .full {
+   width: 100%;
+   clear: both;
+ }
+
+/**
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1,
@@ -176,16 +195,20 @@ pre {
   }
 }
 
-/**
- * Clearfix
- */
-%clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
+.home-columns {
+  @extend %clearfix;
+}
+
+.cyp-banner {
+  margin-top: $spacing-unit;
+  a {
+    display: block;
+  }
+  img {
+    border: 2px solid $brand-color;
   }
 }
+
 
 /**
  * Icons

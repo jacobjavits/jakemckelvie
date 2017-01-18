@@ -4,27 +4,37 @@ layout: default
 
 <div class="home">
 
-  <h3>I am a web designer, developer and musician based out of Keene, NH.</h3>
+  <h3>I am a web designer, developer and musician living in Massachusetts.</h3>
 
-  <div class="home-col web-developer">
-    <a href="/portfolio">
-      <svg class="icon icon-display"><use xlink:href="#icon-display"></use></svg>
-      <h2>Web</h2>
-    </a>
-  </div>
-  <div class="home-col portrait">
-    <div>
-      <img src="/css/images/jake-portrait-bw.jpg" alt="Jake Picture">
+  <div class="home-columns">
+    <div class="home-col web-developer">
+      <a href="/portfolio">
+        <svg class="icon icon-display"><use xlink:href="#icon-display"></use></svg>
+        <h2>Web</h2>
+      </a>
     </div>
-  </div>
-  <div class="home-col musician">
-    <a href="http://jcmandtops.com" target="_blank">
-      <svg class="icon icon-headphones"><use xlink:href="#icon-headphones"></use></svg>
-      <h2>Music</h2>
-    </a>
-  </div>
+    <div class="home-col portrait">
+      <div>
+        <img src="/css/images/jake-portrait-bw.jpg" alt="Jake Picture">
+      </div>
+    </div>
+    <div class="home-col musician">
+      <a href="http://jcmandtops.com" target="_blank">
+        <svg class="icon icon-headphones"><use xlink:href="#icon-headphones"></use></svg>
+        <h2>Music</h2>
+      </a>
+    </div>
+  </div><!-- /.home-columns -->
+
+    <div class="full cyp-banner clear-before">
+      <a href="http://www.sparkandfizz.com/crashing-your-planet/" target="_blank">
+        <img src="/images/cyp-banner.png" alt="Crashing Your Planet Podcast" width="546">
+      </a>
+      <h2>Listen to my podcast!</h2>
+    </div>
+
   <h2 class="contact-line">
-    Please <a href="mailto:{{ site.email }}">contact me</a> regarding either of the above topics.
+    Please <a href="mailto:{{ site.email }}">contact me</a> regarding any of the above topics.
   </h2>
 
   <!-- <h1 class="page-heading">Posts</h1> -->
