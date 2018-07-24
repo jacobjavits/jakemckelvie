@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<h1 class="text-center">Blog</h1>
+<h3 class="text-center">This page contains assorted musings pertaining to web stuff, music stuff, or just your classic, run of the mill, meat-and-potatoes stuff.</h3>
+
+<hr />
+
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+    <h2>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h2>
+  </li>
+  {% endfor %}
+</ul>
